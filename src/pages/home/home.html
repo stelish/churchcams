@@ -1,0 +1,54 @@
+
+<ion-content>
+
+<div class="mef-player">
+  <vg-player>
+    <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
+        <source src="rtsp://192.168.1.192:554/v2">
+    </video>
+  </vg-player>
+</div>
+
+<div class="mef-player">
+  <vg-player>
+    <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
+        <source src="rtsp://192.168.1.45/live.sdp">
+    </video>
+  </vg-player>
+</div>
+
+<div class="mef-player">
+  <vg-player>
+    <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
+        <source src="http://192.168.1.181/videostream.cgi?user=admin&pwd=admin" type="video/mp4">
+    </video>
+  </vg-player>
+</div>
+
+<div class="mef-player">
+  <embed type="application/x-vlc-plugin" pluginspage="http://www.videolan.org"
+         width="320"
+         height="240"
+         target="rtsp://192.168.1.45/live.sdp"
+         id="vlc" />
+</div>
+
+<div class="mef-player">
+  <vg-player>
+    <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
+        <source src="https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+    </video>
+  </vg-player>
+</div>
+
+<div class="mef-player">
+  <vg-player>
+    <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
+        <source src="https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+    </video>
+  </vg-player>
+</div>
+
+
+
+</ion-content>
