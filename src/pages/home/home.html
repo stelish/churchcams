@@ -2,51 +2,127 @@
 <ion-content>
 
 <div class="mef-player">
-  <vg-player>
-    <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
-        <source src="rtsp://192.168.1.192:554/v2">
-    </video>
-  </vg-player>
+  <div id="vxg_media_player1" class="vxgplayer" width="560" height="440"
+  url="rtsp://admin:@192.168.1.10/user=admin_password=tlJwpbo6_channel=1_stream=0.sdp?real_stream"
+  nmf-src="/assets/pnacl/Release/media_player.nmf"
+nmf-path="media_player.nmf"
+useragent-prefix="MMP/3.0"
+latency="0"
+autohide="1"
+autostart
+auto-reconnect
+connection-timeout="5000"
+connection-udp="0"
+custom-digital-zoom></div>
 </div>
 
 <div class="mef-player">
-  <vg-player>
-    <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
-        <source src="rtsp://192.168.1.45/live.sdp">
-    </video>
-  </vg-player>
+			<div id="vxg_media_player2" class="vxgplayer" width="560" height="440"
+      url="rtsp://admin:12345@192.168.1.74:554/Streaming/Channels/2?transportmode=unicast"
+      nmf-src="/assets/pnacl/Release/media_player.nmf"
+nmf-path="media_player.nmf"
+useragent-prefix="MMP/3.0"
+latency="0"
+autohide="1"
+volume="0.7"
+avsync
+autostart
+controls
+mute
+aspect-ratio
+aspect-ratio-mode="2"
+auto-reconnect
+connection-timeout="5000"
+connection-udp="0"
+custom-digital-zoom></div>
+</div>
+
+<!-- <ng-template ngFor let-cam [ngForOf]="cams">
+  <cam [playerId]="cam.id" [streamUrl]="cam.stream"></cam>
+</ng-template> -->
+
+<div class="mef-player">
+  <div id="vxg_media_player3" class="vxgplayer" width="560" height="440"
+  url="rtsp://192.168.1.192:554/v2"
+  nmf-src="/assets/pnacl/Release/media_player.nmf"
+nmf-path="media_player.nmf"
+useragent-prefix="MMP/3.0"
+latency="0"
+autohide="1"
+volume="0.7"
+avsync
+autostart
+controls
+mute
+aspect-ratio
+aspect-ratio-mode="2"
+auto-reconnect
+connection-timeout="5000"
+connection-udp="0"
+custom-digital-zoom></div>
 </div>
 
 <div class="mef-player">
-  <vg-player>
-    <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
-        <source src="http://192.168.1.181/videostream.cgi?user=admin&pwd=admin" type="video/mp4">
-    </video>
-  </vg-player>
+  <div id="vxg_media_player4" class="vxgplayer" width="560" height="440"
+  url="rtsp://admin:12345@192.168.1.78:554/Streaming/Channels/2?transportmode=unicast"
+  nmf-src="/assets/pnacl/Release/media_player.nmf"
+nmf-path="media_player.nmf"
+useragent-prefix="MMP/3.0"
+latency="0"
+autohide="1"
+volume="0.7"
+avsync
+autostart
+controls
+mute
+aspect-ratio
+aspect-ratio-mode="2"
+auto-reconnect
+connection-timeout="5000"
+connection-udp="0"
+custom-digital-zoom></div>
 </div>
 
 <div class="mef-player">
-  <embed type="application/x-vlc-plugin" pluginspage="http://www.videolan.org"
-         width="320"
-         height="240"
-         target="rtsp://192.168.1.45/live.sdp"
-         id="vlc" />
+  <div id="vxg_media_player5" class="vxgplayer" width="560" height="440"
+  url="rtsp://admin:@192.168.1.11/user=admin_password=tlJwpbo6_channel=1_stream=0.sdp?real_stream"
+  nmf-src="/assets/pnacl/Release/media_player.nmf"
+nmf-path="media_player.nmf"
+useragent-prefix="MMP/3.0"
+latency="0"
+autohide="1"
+volume="0.7"
+avsync
+autostart
+controls
+mute
+aspect-ratio
+aspect-ratio-mode="2"
+auto-reconnect
+connection-timeout="5000"
+connection-udp="0"
+custom-digital-zoom></div>
 </div>
 
 <div class="mef-player">
-  <vg-player>
-    <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
-        <source src="https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
-    </video>
-  </vg-player>
-</div>
-
-<div class="mef-player">
-  <vg-player>
-    <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
-        <source src="https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
-    </video>
-  </vg-player>
+  <div id="vxg_media_player6" class="vxgplayer" width="560" height="440"
+  url="rtsp://192.168.1.45/live.sdp"
+  nmf-src="/assets/pnacl/Release/media_player.nmf"
+nmf-path="media_player.nmf"
+useragent-prefix="MMP/3.0"
+latency="0"
+autohide="1"
+volume="0.7"
+avsync
+autostart
+controls
+mute
+aspect-ratio
+aspect-ratio-mode="2"
+auto-reconnect
+connection-timeout="5000"
+connection-udp="0"
+custom-digital-zoom></div>
 </div>
 
 

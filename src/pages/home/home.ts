@@ -11,4 +11,8 @@ export class HomePage {
 
   }
 
+  createPlayer(id:any):void {
+
+  }
+
 }
